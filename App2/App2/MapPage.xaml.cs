@@ -10,11 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace App2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MapPage : TabbedPage
+    public partial class MapPage : ContentPage
     {
         public MapPage ()
         {
             InitializeComponent();
+            Xamarin.FormsMaps.Init();
         }
     }
 }

@@ -50,5 +50,20 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>App2</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MKDirectionsRequest</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.maps.directionsrequest</string>
+			</array>
+		</dict>
+	</array>
+<key>NSLocationAlwaysUsageDescription</key>
+<string>Please allow us to use your location.</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>We are using your location</string>
 </dict>
 </plist>

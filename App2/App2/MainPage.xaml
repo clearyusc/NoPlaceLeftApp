@@ -5,11 +5,7 @@
              x:Class="App2.MainPage">
 
     <local:MapPage />
-    <ContentPage Title="Training">
-        <Label Text="Welcome to Training!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-    </ContentPage>
+    <local:TrainingPage />
     <ContentPage Title="Settings">
         <Label Text="Welcome to Settings!!" 
            VerticalOptions="Center" 
