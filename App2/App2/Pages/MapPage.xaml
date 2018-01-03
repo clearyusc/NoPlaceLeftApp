@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="App2.MapPage"
+             Title="Map">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" Padding="30">
+            <maps:Map WidthRequest="320" HeightRequest="200"
+            x:Name="MyMap"/>
+
+            <Label x:Name="MyLabel" Text="Welcome to Map!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+            <Button x:Name="AddPinButton" Text="Add Pin" Clicked="AddPinButtonClicked"></Button>
+
+            <StackLayout Orientation="Horizontal">
+                <Button TextColor="Gray" x:Name="PrayedForButton" Text="Prayed For" Clicked="PrayedForButtonClicked"/>
+                <Button TextColor="Gray" x:Name="TestimonyButton" Text="Testimony" Clicked="TestimonyButtonClicked"/>
+                <Button TextColor="Gray" x:Name="GospelButton" Text="Gospel" Clicked="GospelButtonClicked"/>
+
+                <!--<StackLayout Orientation="Vertical">
+                    <Button x:Name="RedLightButton" Text="Red Light" Clicked="RedLightButtonClicked"/>
+                    <Button x:Name="YellowLightButton" Text="Yellow Light" Clicked="YellowLightButtonClicked"/>
+                    <Button x:Name="GreenLightButton" Text="Green Light" Clicked="GreenLightButtonClicked"/>
+                </StackLayout>-->
+                
+            </StackLayout>
+            <!-- need to put buttons here -->
+
+            <Entry x:Name="NameOfPerson" Placeholder="Name of person(s)"></Entry>
+            <Editor x:Name="Notes" Text="Notes..."></Editor>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
