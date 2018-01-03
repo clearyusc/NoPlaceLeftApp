@@ -6,10 +6,6 @@
 
     <local:MapPage />
     <local:TrainingPage />
-    <ContentPage Title="Settings">
-        <Label Text="Welcome to Settings!!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-    </ContentPage>
+    <local:SettingsPage />
 
 </TabbedPage>

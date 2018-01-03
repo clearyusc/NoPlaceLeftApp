@@ -9,7 +9,7 @@
             <maps:Map WidthRequest="320" HeightRequest="200"
             x:Name="MyMap"/>
 
-            <Label Text="Welcome to Map!" 
+            <Label x:Name="MyLabel" Text="Welcome to Map!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
         </StackLayout>
